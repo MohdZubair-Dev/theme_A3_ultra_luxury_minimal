@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muntada Global | Where Minds Meet, Ideas Merge.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muntada Global designs meaningful business experiences that bring together leaders, innovators, and decision-makers.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{ url_for('index') }}" class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Muntada Global logo" class="logo-image">
+      </a>
+      <nav class="main-nav">
+        <a href="{{ url_for('index') }}" class="nav-link active">Home</a>
+        <a href="{{ url_for('about') }}" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#training" class="nav-link">Training</a>
+        <a href="{{ url_for('about') }}#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow">Muntada Global</p>
+        <h1>Where Minds Meet, Ideas Merge.</h1>
+        <p class="hero-text">
+          Muntada Global designs meaningful business experiences that bring together leaders, innovators, and decision-makers.
+          With a refined blend of strategy, creativity, and research-driven planning, we create environments where conversations
+          grow into opportunities and ideas evolve into action.
+        </p>
+        <div class="hero-actions">
+          <a href="{{ url_for('about') }}#contact" class="btn primary">Get In Touch</a>
+          <a href="#services" class="btn ghost">Explore Services</a>
+        </div>
+        <div class="hero-meta">
+          <span>Saudi Arabia</span>
+          <span>Dubai</span>
+          <span>Bangalore</span>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="hero-panel-inner">
+          <p class="hero-panel-title">Where Vision Shapes Experiences</p>
+          <p class="hero-panel-text">
+            We develop high-value platforms that empower professionals and align with the ever-changing demands of today’s global landscape.
+          </p>
+          <ul class="hero-list">
+            <li>Oil &amp; Gas, Petrochemicals, Energy</li>
+            <li>Manufacturing &amp; Infrastructure</li>
+            <li>Technology &amp; Innovation</li>
+            <li>Middle East • Africa • Asia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision / Intro -->
+  <section class="section" id="about-intro">
+    <div class="container narrow">
+      <h2 class="section-title">Where Vision Shapes Experiences</h2>
+      <p class="section-text">
+        Muntada Global stands as a distinguished partner in professional event creation and industry engagement.
+        We collaborate with organisations to develop high-value platforms that empower professionals and respond to the
+        evolving demands of today’s global landscape.
+      </p>
+      <p class="section-text">
+        Our work spans major sectors such as oil &amp; gas, petrochemicals, energy, manufacturing, infrastructure, and technology,
+        with a strong presence across the Middle East, Africa, and Asia. Every experience we craft is rooted in insight, precision,
+        and purpose — enabling participants to connect, exchange, and grow with confidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-kicker">Designing purposeful platforms for professionals and organisations.</p>
+      </div>
+
+      <div class="grid services-grid">
+        <article class="card">
+          <h3>Event Management</h3>
+          <p>
+            End-to-end event creation and execution designed to deliver refined, seamless, and impactful experiences
+            for corporate and industry-focused gatherings.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Professional Development Programs</h3>
+          <p>
+            Expert-led, open-enrolment learning sessions that enhance professional capabilities across multiple disciplines.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Industry Conferences</h3>
+          <p>
+            Strategically curated conferences that unite thought leaders and specialists to explore emerging trends,
+            exchange perspectives, and inspire meaningful dialogue.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>In-House Training</h3>
+          <p>
+            Customised training programs crafted specifically for your organisation, blending global best practices
+            with your team’s unique development needs.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Events</h2>
+        <p class="section-kicker">
+          Tailored industry events across Saudi Arabia, Dubai, and key global hubs.
+        </p>
+      </div>
+      <p class="section-text narrow">
+        From strategic leadership forums to high-impact industry summits, Muntada Global designs events that combine
+        knowledge-sharing, networking, and commercial opportunity. This section can be expanded later with upcoming
+        events, highlights, or case studies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Training -->
+  <section class="section section-alt" id="training">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Training</h2>
+        <p class="section-kicker">
+          Purpose-built learning experiences for technical and business teams.
+        </p>
+      </div>
+      <p class="section-text narrow">
+        Our training and development offerings include public programs, in-house workshops, and specialised tracks for
+        sector-specific skill-building. You can use this section to showcase your key training areas and flagship programs.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Partner With Us -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Partner With Us</h2>
+        <p class="section-kicker">Purpose-built platforms for every stakeholder.</p>
+      </div>
+
+      <div class="grid why-grid">
+        <article class="card numbered">
+          <div class="number-badge">01</div>
+          <h3>A Stage for Industry Experts</h3>
+          <p>
+            A distinguished platform for specialists, speakers, and thought leaders to explore advanced themes and
+            connect with influential peers.
+          </p>
+        </article>
+
+        <article class="card numbered">
+          <div class="number-badge">02</div>
+          <h3>Purposeful Networking for Delegates</h3>
+          <p>
+            Delegates gain direct access to professionals who matter, discover fresh opportunities, and elevate their
+            market presence through strategic interactions.
+          </p>
+        </article>
+
+        <article class="card numbered">
+          <div class="number-badge">03</div>
+          <h3>Opportunities for Innovators &amp; Exhibitors</h3>
+          <p>
+            An exclusive avenue for showcasing breakthrough solutions, technologies, and products directly to senior
+            decision-makers.
+          </p>
+        </article>
+
+        <article class="card numbered">
+          <div class="number-badge">04</div>
+          <h3>Enhanced Reach for Media Partners</h3>
+          <p>
+            Media collaborators benefit from strategic exposure to regional and international audiences, amplifying
+            visibility and strengthening industry presence.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="section contact-cta" id="contact">
+    <div class="container contact-cta-inner">
+      <div>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-text">
+          We’re here to collaborate, support your goals, and help bring your vision to life.
+        </p>
+      </div>
+      <a href="{{ url_for('about') }}#contact" class="btn primary large">Get In Touch →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Muntada Global logo" class="footer-logo">
+        <p class="footer-tagline">Where Minds Meet, Ideas Merge.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="{{ url_for('about') }}#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <p>Bangalore</p>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@muntadaglobal.com">info@muntadaglobal.com</a></p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Muntada Global. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+        navToggle.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

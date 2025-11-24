@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: muntada-global-a3
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    autoDeploy: true
+    region: frankfurt

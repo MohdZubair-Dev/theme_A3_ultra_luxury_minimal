@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Muntada Global</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Muntada Global - a forward-thinking events and conference solutions firm.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{ url_for('index') }}" class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Muntada Global logo" class="logo-image">
+      </a>
+      <nav class="main-nav">
+        <a href="{{ url_for('index') }}" class="nav-link">Home</a>
+        <a href="{{ url_for('about') }}" class="nav-link active">About</a>
+        <a href="{{ url_for('index') }}#events" class="nav-link">Events</a>
+        <a href="{{ url_for('index') }}#training" class="nav-link">Training</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="sub-hero">
+    <div class="container narrow">
+      <p class="sub-hero-kicker">About Muntada Global</p>
+      <h1>Thoughtfully Crafted Business Experiences</h1>
+      <p class="section-text">
+        Muntada Global is a forward-thinking events and conference solutions firm dedicated to designing purposeful
+        platforms for knowledge exchange, collaboration, and industry advancement.
+      </p>
+      <p class="section-text">
+        We bring together organisations, experts, and professionals through meticulously crafted events that prioritise
+        value, clarity, and relevance. Our team integrates strategy, research, and problem-solving to ensure each
+        experience reflects the highest degree of professionalism and international standard.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="section">
+    <div class="container grid two-col">
+      <div>
+        <h2 class="section-title">Our Vision</h2>
+        <p class="section-text">
+          To be a trusted global partner in shaping powerful, knowledge-driven business experiences.
+        </p>
+      </div>
+      <div>
+        <h2 class="section-title">Our Mission</h2>
+        <ul class="check-list">
+          <li>To deliver well-crafted, world-class business events</li>
+          <li>To connect professionals, innovators, and organisations</li>
+          <li>To provide meaningful platforms for learning and collaboration</li>
+          <li>To uphold precision, quality, and global excellence in event execution</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Core Values</h2>
+      <p class="section-text narrow">
+        Professionalism | Integrity | Innovation | Quality | Purpose
+      </p>
+      <div class="values-chips">
+        <span class="chip">Professionalism</span>
+        <span class="chip">Integrity</span>
+        <span class="chip">Innovation</span>
+        <span class="chip">Quality</span>
+        <span class="chip">Purpose</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Deliver -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What We Deliver</h2>
+      <div class="grid deliver-grid">
+        <ul class="bullet-list">
+          <li>Complete event management solutions</li>
+          <li>Delegate engagement &amp; targeted outreach</li>
+          <li>Program research &amp; agenda development</li>
+        </ul>
+        <ul class="bullet-list">
+          <li>Speaker and industry-expert coordination</li>
+          <li>Venue management &amp; operational planning</li>
+          <li>Branding, communication &amp; visual identity</li>
+          <li>Seamless on-ground event delivery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Connect With Us</h2>
+        <p class="section-text">
+          We’d love to hear from you. Share your requirements, ideas, or questions and our team will be in touch.
+        </p>
+      </div>
+      <form class="contact-form" action="{{ url_for('contact') }}" method="post">
+        <div class="form-row">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-row">
+          <label for="organisation">Organisation</label>
+          <input type="text" id="organisation" name="organisation" placeholder="Company / Organisation name">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your event, training, or enquiry." required></textarea>
+        </div>
+        <button type="submit" class="btn primary full-width">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Muntada Global logo" class="footer-logo">
+        <p class="footer-tagline">Where Minds Meet, Ideas Merge.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('index') }}#events">Events</a></li>
+          <li><a href="{{ url_for('index') }}#training">Training</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <p>Bangalore</p>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@muntadaglobal.com">info@muntadaglobal.com</a></p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Muntada Global. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+        navToggle.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
